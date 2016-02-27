@@ -26,7 +26,7 @@ sudo chown -R redmine:redmine $REDMINE_PATH/{public,tmp,log,files}
 
 # TODO create the push code to the target git repo
 
-sudo yum install mysql-devel ImageMagick-devel
+sudo yum install -y mysql-devel ImageMagick-devel
 
 cp config/database.yml{.example,}
 cp config/configuration.yml{.example,}
