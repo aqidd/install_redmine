@@ -4,3 +4,8 @@ sudo yum -y install gcc-c++ patch readline readline-devel zlib zlib-devel libcur
 
 sudo sed --in-place "s/SELINUX=enforcing/SELINUX=permissive/g" /etc/selinux/config
 sudo setenforce 0
+
+sudo firewall-cmd --add-service=http
+sudo firewall-cmd --add-service=https
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --add-service=https --permanent
